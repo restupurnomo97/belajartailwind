@@ -1,6 +1,9 @@
+// tailwind.config.js
 module.exports = {
   darkMode: "class",
-  content: ["./index.html"],
-  theme: { extend: {} },
+  content: ["./index.html"], // tadinya ./src/index.html
+  theme: {
+    extend: {},
+  },
   plugins: [],
 };

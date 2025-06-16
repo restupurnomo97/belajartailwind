@@ -1,0 +1,16 @@
+# Hapus folder hasil build & dependen lokal
+dist/
+node_modules/
+
+# Lockfile Bun
+bun.lock
+
+# Editor/OS cache
+.vscode/
+.DS_Store
+
+# System file
+Thumbs.db
+
+# Env (jika pakai key API dll)
+.env

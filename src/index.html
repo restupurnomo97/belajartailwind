@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulloh – Web Developer</title>
+    <link rel="stylesheet" href="./dist/global.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lu.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-sans px-4 sm:px-8 pt-20 relative">
+    <!-- Sticky Navbar -->
+    <nav
+      class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur flex justify-between items-center px-6 py-3 z-50"
+    >
+      <h1 class="text-lg text-pink-400 font-semibold">Abdulloh</h1>
+      <div class="flex items-center space-x-4 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <button onclick="toggleTheme()" class="text-white">
+          <i data-lucide="moon" id="theme-icon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="max-w-screen-md mx-auto space-y-14">
+      <!-- Hero -->
+      <section class="text-center mt-10" data-aos="fade-down">
+        <h2 class="text-4xl sm:text-5xl font-bold text-pink-400">
+          Hi, I'm Abdulloh
+        </h2>
+        <p class="text-lg text-gray-300 mt-3">
+          I’m a <span class="text-pink-300">Frontend Developer</span> building
+          responsive websites with Tailwind CSS & modern tools.
+        </p>
+        <div class="text-pink-200 text-xl h-8 mt-3">
+          <span id="typed-output"></span>
+        </div>
+        <div class="mt-6 flex justify-center flex-wrap gap-3">
+          <a
+            href="https://github.com/abdulloh"
+            target="_blank"
+            class="bg-pink-500 text-black px-4 py-2 rounded hover:bg-pink-400 transition"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/abdulloh"
+            target="_blank"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition"
+            >LinkedIn</a
+          >
+          <a
+            href="mailto:abdulloh@example.com"
+            class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition"
+            >Contact</a
+          >
+          <a
+            href="/cv-abdulloh.pdf"
+            download
+            class="bg-green-500 text-black px-4 py-2 rounded hover:bg-green-400 transition"
+            >Download CV</a
+          >
+        </div>
+      </section>
+
+      <!-- About -->
+      <section
+        id="about"
+        data-aos="fade-up"
+        class="bg-gray-900/60 p-6 rounded-xl shadow-md"
+      >
+        <h3 class="text-2xl font-semibold text-pink-400 mb-2">About Me</h3>
+        <p class="text-gray-200 leading-relaxed">
+          I'm Abdulloh, a frontend developer with a love for modern UI and clean
+          code. I focus on crafting responsive, accessible, and
+          performance-optimized websites with great attention to user
+          experience.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section
+        id="skills"
+        data-aos="fade-up"
+        class="bg-gray-900/60 p-6 rounded-xl shadow-md"
+      >
+        <h3 class="text-2xl font-semibold text-pink-400 mb-4">
+          Skills & Tools
+        </h3>
+        <ul class="grid grid-cols-2 gap-2 text-left text-gray-300">
+          <li>• HTML5, CSS3</li>
+          <li>• JavaScript (ES6+)</li>
+          <li>• Tailwind CSS</li>
+          <li>• Typed.js</li>
+          <li>• Git & GitHub</li>
+          <li>• Responsive Design</li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" data-aos="fade-up">
+        <h3 class="text-2xl font-semibold text-pink-400 mb-4">Projects</h3>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="bg-gray-800 p-4 rounded-lg hover:scale-105 transition">
+            <h4 class="text-xl font-bold">Portfolio Site</h4>
+            <p class="text-sm text-gray-400">
+              Responsive personal site built with Tailwind.
+            </p>
+            <div class="flex gap-3 mt-2 text-sm">
+              <a href="#" target="_blank" class="text-blue-400 underline"
+                >Live</a
+              >
+              <a href="#" target="_blank" class="text-gray-400 underline"
+                >Code</a
+              >
+            </div>
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg hover:scale-105 transition">
+            <h4 class="text-xl font-bold">Blog Platform</h4>
+            <p class="text-sm text-gray-400">
+              Markdown-powered blog with custom theme.
+            </p>
+            <div class="flex gap-3 mt-2 text-sm">
+              <a href="#" target="_blank" class="text-blue-400 underline"
+                >Live</a
+              >
+              <a href="#" target="_blank" class="text-gray-400 underline"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial -->
+      <section
+        data-aos="fade"
+        class="text-center text-gray-400 italic"
+        id="contact"
+      >
+        “Working with Abdulloh was a pleasure – fast, reliable, and clean code!”
+        <p class="text-pink-300 font-semibold mt-2">— Former Client</p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center text-sm text-gray-500 pt-10">
+        &copy; 2025 Abdulloh. Built with 💖 using Tailwind CSS.
+      </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+      lucide.createIcons();
+      new Typed("#typed-output", {
+        strings: [
+          "Frontend Developer 💻",
+          "Tailwind Enthusiast 🌸",
+          "Open to Work ✉️",
+        ],
+        typeSpeed: 60,
+        backSpeed: 30,
+        loop: true,
+      });
+      function toggleTheme() {
+        const html = document.documentElement;
+        const icon = document.getElementById("theme-icon");
+        html.classList.toggle("dark");
+        icon.setAttribute(
+          "data-lucide",
+          html.classList.contains("dark") ? "sun" : "moon"
+        );
+        lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>

@@ -8,7 +8,9 @@
     "build": "concurrently \"bun run tw:build\" \"bun build ./src/main.js --outdir ./dist\""
   },
   "dependencies": {
-    "tailwindcss": "^4.1.10",
-    "typed.js": "^2.1.0"
+    "tailwindcss": "^4.1.8",
+    "@tailwindcss/cli": "^4.1.8",
+    "typed.js": "^2.1.0",
+    "concurrently": "^9.1.2"
   }
 }
